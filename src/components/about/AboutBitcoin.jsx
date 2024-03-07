@@ -5,7 +5,7 @@ import Card from "../cards/Card";
 const AboutBitcoin = () => {
   return (
     <div className="mt-6 font-sans	font-semibold text-gray-700 text-[18px]">
-      <div className="w-[850px] max-sm:w-[430px]">
+      <div className="w-[850px] max-sm:w-[340px]">
         <Section heading={"About Bitcoin"}>
           <div className="py-4">
             <h1 className="text-black pb-2 font-bold">What is Bitcoin?</h1>

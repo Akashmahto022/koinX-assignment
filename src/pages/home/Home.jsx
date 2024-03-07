@@ -14,7 +14,7 @@ import Performance from "../../components/performence/Performance";
 const Home = () => {
   return (
     <div className="">
-      <div className="mx-[56px] gap-4 sm:w-[300px] max-sm:mx-4">
+      <div className="mx-[56px] gap-4 sm:w-[300px] max-sm:ml-4">
         <div className="text-gray-500 mt-[14px]">
           Cryptocurrenices >> <span className="text-black"> Bitcoin</span>
         </div>
@@ -53,7 +53,7 @@ const Home = () => {
         <YouMayAlsoLike />
         <AllTrendingCoins />
       </div>
-      <div className="m-[54px] sm:hidden">
+      <div className="m-[14px] sm:hidden">
             <FeaturedCard />
             <div className="mt-6 bg-white sm:hidden">
               <TrendingCoins />

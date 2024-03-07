@@ -26,7 +26,7 @@ const Performance = () => {
     <div className='mt-3'>
     
       <Section heading={"Performance"}>
-      <div className='w-[800px] max-sm:w-[380px]'>
+      <div className='w-[800px] max-sm:w-[300px]'>
                 <div className='flex gap-4 mt-4'>
                     <span>
                         <h1>Today's Low</h1>
@@ -57,7 +57,7 @@ const Performance = () => {
         {coinsData.map((coins, index)=>(
             <div key={index} className='mt-4'>
                 <h1 className='text-xl font-bold text-black'>Fundamentals <InfoIcon color="disabled"/> </h1>
-                <div className='flex justify-between pl-8 pr-12 mt-4 max-sm:block'>
+                <div className='flex justify-between pl-8 pr-12 max-sm:p-0 mt-4 max-sm:block'>
                     <div className=''>
                         <span className='flex justify-between gap-[100px]'>
                             <h1>Bitcoin Price</h1>

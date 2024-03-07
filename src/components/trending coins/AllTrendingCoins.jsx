@@ -41,7 +41,7 @@ const AllTrendingCoins = () => {
     fetchTrendingCoins();
   }, []);
   return (
-    <div className="bg-white mt-8 px-[60px] max-sm:px-0">
+    <div className="bg-white mt-8 px-[60px] py-8 max-sm:px-0">
       <h1 className="p-8 text-2xl font-bold ">Trending Coins </h1>
       <div className="pl-[10px]">
 
@@ -49,7 +49,7 @@ const AllTrendingCoins = () => {
         {trendingCoins.map((coin) => (
           <div
             key={coin.item.id}
-            className="rounded-lg mr-2 border-2 p-4 w-[220px]"
+            className="rounded-lg mr-2 border-2 p-4 w-[230px] max-sm:w-[170px]"
           >
             <div className="flex gap-2">
               <img src={coin.item.large} alt={coin.item.name} className="w-6" />

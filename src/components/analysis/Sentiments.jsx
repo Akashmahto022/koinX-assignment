@@ -27,7 +27,7 @@ const Sentiments = () => {
   };
 
   return (
-    <div className="bg-white w-[850px] rounded-md mt-6 p-4 max-sm:w-[430px]">
+    <div className="bg-white w-[850px] rounded-md mt-6 p-4 max-sm:w-[340px]">
     <h1 className="text-2xl font-bold mb-3">Sentiment</h1>
     <h1 className="text-gray-700 font-semibold mb-3">Key Events <InfoIcon color="disabled"/></h1>
       <Carousel responsive={responsive}>
@@ -108,16 +108,16 @@ const Sentiments = () => {
       <div>
     <h1 className="text-gray-700 font-bold mb-3 mt-6">Analyst Estimates <InfoIcon color="disabled"/></h1>
     <div className="flex gap-6">
-        <h1 className="p-8 bg-green-100 rounded-full inline-block text-green-700 text-2xl font-bold">76%</h1>
+        <h1 className="p-8 bg-green-100 rounded-full inline-block text-green-700 text-2xl font-bold max-sm:p-[24px]">76%</h1>
         <div>
             <span className="flex gap-4 text-gray-500 font-semibold">
-                Buy <hr className="w-[320px] max-sm:w-[140px] border-t-[5px] border-green-500 my-3"/> 76%
+                Buy <hr className="w-[320px] max-sm:w-[90px] border-t-[5px] border-green-500 my-3"/> 76%
             </span>
             <span className="flex gap-4 text-gray-500 font-semibold">
-                Hold <hr className="w-[60px] border-t-[5px] border-gray-300 my-3"/> 76%
+                Hold <hr className="w-[60px] max-sm:w-[40px] border-t-[5px] border-gray-300 my-3"/> 76%
             </span>
             <span className="flex gap-4 text-gray-500 font-semibold">
-                Sell <hr className="w-[120px] border-t-[5px] border-red-500 my-3"/> 76%
+                Sell <hr className="w-[120px] max-sm:w-[80px] border-t-[5px] border-red-500 my-3"/> 76%
             </span>
         </div>
     </div>
