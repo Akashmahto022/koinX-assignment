@@ -7,10 +7,11 @@ const Card = ({
     bgColor = "bg-blue-600",
     image,
     title,
-    btnName
+    btnName,
+    className
 }) => {
   return (
-    <div className={`p-4 ${bgColor} inline-block rounded-md`}>
+    <div className={`p-4 ${bgColor} inline-block rounded-md ${className}`}>
     <div className='flex gap-6'>
       <img src={image} alt="" className='w-[100px] h-[90px] pt-2'/>
       <div>

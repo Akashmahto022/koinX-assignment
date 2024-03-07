@@ -5,7 +5,7 @@ import Card from "../cards/Card";
 const AboutBitcoin = () => {
   return (
     <div className="mt-6 font-sans	font-semibold text-gray-700 text-[18px]">
-      <div className="w-[850px]">
+      <div className="w-[850px] max-sm:w-[430px]">
         <Section heading={"About Bitcoin"}>
           <div className="py-4">
             <h1 className="text-black pb-2 font-bold">What is Bitcoin?</h1>
@@ -47,13 +47,15 @@ const AboutBitcoin = () => {
             <h1 className="text-black pb-4 font-bold text-xl">
               Already Holding Bitcoin
             </h1>
-            <div className="flex gap-8">
+            <div className="flex gap-8 max-sm:block ">
               <Card
                 bgColor={"bg-gradient-to-l from-blue-700 to-green-400"}
                 image={"https://images.pexels.com/photos/6801647/pexels-photo-6801647.jpeg?auto=compress&cs=tinysrgb&w=600"}
                 title={"Calculate your Profits"}
                 btnName={"Check Now"}
+                className={'max-sm:my-6'}
               />
+              <span className="max-sm:my-[12px]"></span>
               <Card
                 bgColor={"bg-gradient-to-l from-red-700 to-orange-400"}
                 image={"https://images.pexels.com/photos/6801650/pexels-photo-6801650.jpeg?auto=compress&cs=tinysrgb&w=600"}

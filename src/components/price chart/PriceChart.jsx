@@ -58,11 +58,8 @@ const PriceChart = () => {
       <h1 className="mb-2">Bitcoin Price Chart (USD)</h1>
         <iframe
           src="https://s.tradingview.com/widgetembed/?frameElementId=tradingview_8a9f5&symbol=BITSTAMP%3ABTCUSD&interval=D&hidesidetoolbar=1&symboledit=0&saveimage=0&toolbarbg=f1f3f6&studies=%5B%5D&theme=Light&style=1&timezone=Etc%2FUTC&studies_overrides=%7B%7D&overrides=%7B%7D&enabled_features=%5B%5D&disabled_features=%5B%5D&locale=en&utm_source=www.tradingview.com&utm_medium=widget_new&utm_campaign=chart&utm_term=BITSTAMP%3ABTCUSD"
-          style={{
-            width: "800px",
-            height: "600px",
-            border: "none",
-          }}
+          
+          className="w-[800px] h-[600px] border-0 max-sm:w-[380px]"
           title="BTCUSD Chart"
         ></iframe>
       </div>

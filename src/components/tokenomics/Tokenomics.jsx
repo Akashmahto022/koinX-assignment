@@ -4,7 +4,7 @@ import chart from "../../assets/chart.png"
 
 const TokenOmics = () => {
   return (
-    <div className='mt-6 w-[850px]'>
+    <div className='mt-6 w-[850px] max-sm:w-[430px]'>
       <Section heading={"Tokenomics"}>
           <div className="py-4">
             <h1 className="text-black pb-2 font-bold">Initial DistriBution</h1>

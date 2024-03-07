@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { employe } from "./data";
 import axios from "axios";
 
-const YouMayAlsoLike = () => {
+const TryCarousel = () => {
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -12,15 +13,15 @@ const YouMayAlsoLike = () => {
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 5,
+      items: 4,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 3,
+      items: 2,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 2,
+      items: 1,
     },
   };
 
@@ -41,15 +42,12 @@ const YouMayAlsoLike = () => {
     fetchTrendingCoins();
   }, []);
   return (
-    <div className="bg-white mt-8 px-[60px] max-sm:px-0">
-      <h1 className="p-8 text-2xl font-bold ">You May Also Like </h1>
-      <div className="pl-[10px]">
-
+    <div>
       <Carousel responsive={responsive}>
         {trendingCoins.map((coin) => (
           <div
             key={coin.item.id}
-            className="rounded-lg mr-2 border-2 p-4 w-[220px] "
+            className="rounded-lg mr-2 border-2 p-4 w-[270px]"
           >
             <div className="flex gap-2">
               <img src={coin.item.large} alt={coin.item.name} className="w-6" />
@@ -67,16 +65,15 @@ const YouMayAlsoLike = () => {
               <img
                 src={coin.item.data.sparkline}
                 alt={`${coin.item.name} Sparkline`}
-                className="mt-2 w-[140px] pl-[10px]"
+                className="mt-2 w-[180px] pl-[40px]"
               />
             </div>
           </div>
         ))}
       </Carousel>
-      
-      </div>
+      ;
     </div>
   );
 };
 
-export default YouMayAlsoLike;
+export default TryCarousel;

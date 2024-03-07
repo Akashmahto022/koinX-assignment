@@ -5,7 +5,7 @@ import Person from './Person'
 
 const Team = () => {
   return (
-    <div className='mt-6 w-[850px]'>
+    <div className='mt-6 w-[850px] max-sm:w-[430px]'>
       <Section heading={"Team"}>
           <div className="py-4">
             <p className="font-sans	font-semibold text-gray-700 text-[18px]">

@@ -16,11 +16,11 @@ const AllTrendingCoins = () => {
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 2,
+      items: 3,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 1,
+      items: 2,
     },
   };
 
@@ -41,7 +41,7 @@ const AllTrendingCoins = () => {
     fetchTrendingCoins();
   }, []);
   return (
-    <div className="bg-white mt-8 px-[60px]">
+    <div className="bg-white mt-8 px-[60px] max-sm:px-0">
       <h1 className="p-8 text-2xl font-bold ">Trending Coins </h1>
       <div className="pl-[10px]">
 
